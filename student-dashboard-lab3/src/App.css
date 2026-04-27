@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.light {
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.header,
+.box,
+.form-box,
+.student-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  color: #222;
+}
+h2 {
+  margin: 0;
+  color: #2563eb;
+}
+#h2 {
+  color: #2563eb;
+} 
+
+.dark .header,
+.dark .box,
+.dark .form-box,
+.dark .student-card {
+  background-color: #333;
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.course {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 5px 8px;
+  margin: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: -5px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .student-list {
+    grid-template-columns: 1fr;
+  }
+}

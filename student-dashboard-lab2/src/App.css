@@ -1,0 +1,96 @@
+:root {
+  --main-color: #2563eb;
+  --bg-color: #f2f2f2;
+  --card-color: white;
+  --text-color: #222;
+  --border-color: #ccc;
+  --spacing: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: var(--card-color);
+  padding: var(--spacing);
+  border: 1px solid var(--border-color);
+  margin-bottom: 15px;
+}
+h2 {
+  margin: 0;
+  color: lightskyblue;
+}
+
+.search-box,
+.sort-box {
+  background-color: var(--card-color);
+  padding: var(--spacing);
+  border: 1px solid var(--border-color);
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.sort-box button {
+  margin-right: 10px;
+  padding: 8px 12px;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.student-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing);
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.stat-badge {
+  display: inline-block;
+  background-color: #e8f0ff;
+  color: var(--main-color);
+  padding: 6px 10px;
+  margin: 5px 5px 5px 0;
+}
+
+.course-tag {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: white;
+  padding: 6px 10px;
+  margin: 5px 5px 5px 0;
+}
+
+.student-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+}
+
+@media (max-width: 700px) {
+  .student-list {
+    grid-template-columns: 1fr;
+  }
+}
